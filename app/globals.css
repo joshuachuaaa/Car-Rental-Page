@@ -1,33 +1,258 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif; /* Directly set font-family */
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.home{
+  @apply
+  flex
+  flex-col
+  xs:flex-row
+}
+.intro{
+  @apply
+  flex
+  flex-col
+  px-10
+  pt-7
+}
+.intro-p{
+  @apply
+  my-9
+}
+.intro-header{
+  @apply
+  flex
+  flex-col
+}
+.intro-header-text{
+  @apply
+  text-5xl
+  font-rubik
+  font-medium
+  overflow-hidden
+}
+
+.sub-hero-wrapper{
+  @apply
+  flex
+  flex-col
+}
+
+.hero-car{
+  @apply
+  relative
+  bg-[url(/nav-bg.png)]
+  bg-cover
+  bg-center
+  h-96  
+}
+
+.hero-car-wrapper{
+  @apply
+  pb-10
+
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%); /* Start from the right, outside the viewport */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hero-car-image{
+  animation:slideInFromRight 0.55s ease-out forwards; /* Ensures the animation completes and stays at final state */
+  @apply 
+  absolute 
+  bottom-0 
+  max-w-none
+  w-[500px]
+  xs-400:w-[600px]
+  xs:w-[520px]
+  mx-10
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.hero-button-1{
+  @apply
+  bg-gray-950  
+  text-white text-sm 
+  font-semibold 
+  hover:text-black hover:bg-white
+  py-1.5 px-4
+  border border-black 
+  rounded
+}
+
+.hero-car-choice{
+   @apply
+   flex
+   flex-row
+   justify-evenly
+   h-20
+   mt-10
+}
+
+.logo-image-wrapper{
+  @apply 
+  filter 
+  grayscale 
+  hover:filter-none 
+  focus:filter-none
+  flex
+  p-3
+  border-r-2
+  w-1/5
+  content-center
+  justify-center
+  align-middle
+  text-center
+}
+
+
+.nav_button{
+  @apply 
+  xs:hidden;
+}
+
+.links{
+  @apply
+  flex
+  justify-center 
+  align-middle
+  gap-5;
+}
+
+.menu{
+  @apply
+  fixed 
+  top-0
+  left-0
+  w-screen 
+  h-screen
+  bg-light-dark
+  z-50
+  overflow-hidden
+  
+}
+
+.menu-options{
+  @apply
+  flex 
+  flex-col 
+  justify-center
+  content-center 
+  align-middle 
+  h-full 
+  w-full
+  text-6xl
+  px-10
+  xxs:text-7xl 
+  gap-10
+  xxs:mx-5 
+  xs:text-8xl xs:mx-20 xs:my-10 xs:gap-10
+  my-5
+  
+
+}
+.menu-text-wrapper{
+  @apply
+  text-start
+  justify-center
+  text-white
+  px-5
+}
+.menu-text{
+  @apply
+  font-bebas
+  font-bold
+}
+.menu-button-wrapper{
+  @apply
+  fixed
+  nav-bar
+  text-white
+  content-center
+  align-middle
+
+}
+
+.nav-bar{
+  @apply
+  flex
+  w-screen
+  justify-between
+  px-8
+  py-5
+}
+
+.section-wrapper{
+  @apply
+  flex
+  flex-col
+  h-lvh
+}
+.app-graphic-wrapper{
+  @apply
+  p-6
+  h-2/3
+
+}
+.app-graphic{
+  @apply
+  h-full
+  relative
+}
+.app-graphic-text{
+  @apply
+  flex
+  flex-col
+  justify-center
+  gap-6
+}
+.app-header-text{
+  @apply
+  text-center
+  font-rubik
+  font-medium
+  text-2xl
+  overflow-hidden
+}
+.app-p-text{
+  @apply
+  px-10
+  py-2
+  text-wrap
+  text-center
+  overflow-hidden
+}
+.app-buttons{
+  @apply
+  flex
+  flex-row
+  justify-center
+  gap-4
+
+}
+
+.phone-section{
+  @apply
+  pb-10
 }
