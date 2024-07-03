@@ -79,7 +79,6 @@
   }
 }
 .hero-car-image{
-  animation:slideInFromRight 0.55s ease-out forwards; /* Ensures the animation completes and stays at final state */
   @apply 
   absolute 
   bottom-0 
@@ -150,7 +149,6 @@
   bg-light-dark
   z-50
   overflow-hidden
-  
 }
 
 .menu-options{
@@ -169,8 +167,6 @@
   xxs:mx-5 
   xs:text-8xl xs:mx-20 xs:my-10 xs:gap-10
   my-5
-  
-
 }
 .menu-text-wrapper{
   @apply
