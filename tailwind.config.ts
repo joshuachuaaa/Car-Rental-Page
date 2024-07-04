@@ -15,8 +15,11 @@ const config: Config = {
       'xs' : '500px',
       // => @media (min-width: 400px) { ... }
       
-      'sm': '640px',
+      'sm': '600px',
       // => @media (min-width: 640px) { ... }
+
+      'semi': '680px',
+     // => @media (min-width: 680px) { ... }
 
       'md': '768px',
       // => @media (min-width: 768px) { ... }

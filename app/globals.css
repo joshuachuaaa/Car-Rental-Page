@@ -21,7 +21,7 @@
   @apply
   flex
   flex-col
-  xs:flex-row
+  md:flex-row
 }
 .intro{
   @apply
@@ -51,6 +51,7 @@
   @apply
   flex
   flex-col
+  overflow-visible
 }
 
 .hero-car{
@@ -59,14 +60,20 @@
   bg-[url(/nav-bg.png)]
   bg-cover
   bg-center
-  h-96  
+  h-96
+  overflow-visible
+  sm:flex
+  sm:justify-center
+  sm:align-middle
+  sm:bg-contain
 }
 
 .hero-car-wrapper{
   @apply
   pb-10
-
+  overflow-visible
 }
+
 
 @keyframes slideInFromRight {
   from {
@@ -86,7 +93,9 @@
   w-[500px]
   xs-400:w-[600px]
   xs:w-[520px]
+  sm:w-4/5
   mx-10
+  sm:mx-0
 }
 
 .hero-button-1{
@@ -207,8 +216,11 @@
 }
 .app-graphic-wrapper{
   @apply
-  p-6
-  h-2/3
+  xs:px-6
+  xs:h-2/3
+  sm:px-10
+  sm:py-12
+  sm:mt-12
 
 }
 .app-graphic{
