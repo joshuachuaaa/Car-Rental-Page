@@ -23,13 +23,12 @@ const Hero = () => {
       <div className="home">
         <div className="intro">
           <div className="intro-header">
-            <span className="intro-header-text">Premium </span>
-            <span className="intro-header-text">Car Rental </span>
-            <span className="intro-header-text">at Next Ride </span>
+            <span className="intro-header-text font-rubik">Premium </span>
+            <span className="intro-header-text font-rubik">Car Rental </span>
+            <span className="intro-header-text font-rubik">at Next Ride </span>
           </div>
-          <div className="intro-p">
-            Experience unparalleled comfort and luxury with
-            an exclusive selection of world-class vehicles.
+          <div className="intro-p font-open-sans">
+            Experience unparalleled comfort and luxury with an exclusive selection of world-class vehicles.
           </div>
           <div className="hero-buttons">
             <button className="hero-button-1">Explore</button>
