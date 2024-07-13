@@ -16,97 +16,105 @@
   overflow-x: hidden;
 }
 
-.main{
-  @apply grid min-h-screen place-items-center;
+.main {
+  @apply 
+  grid 
+  min-h-screen 
+  place-items-center;
 }
 
-.page-wrapper{
-  @apply
-  overflow-visible
-  max-w-[1300px]
-  md:w-full
-  md-lg:w-full
-  lg:mb-10
-  lg:mt-6
+.page-wrapper {
+  @apply 
+  overflow-visible 
+  max-w-[1300px] 
+  md:w-full 
+  md-lg:w-full 
+  lg:mb-10 lg:mt-6;
 }
 
-.home{
-  @apply
-  flex
-  flex-col
-  md:flex-row
-  md:flex-1
-  md-lg:overflow-visible
-  md-lg:my-8
-  lg:my-16
+.home {
+  @apply 
+  flex 
+  flex-col 
+  md:flex-row 
+  md:flex-1 
+  md-lg:overflow-visible 
+  md-lg:my-8 
+  lg:my-16;
 }
-.graphic{
-  @apply w-full md:w-full overflow-visible;
+
+.graphic {
+  @apply 
+  w-full 
+  md:w-full 
+  overflow-visible;
 }
-.intro{
-  @apply
-  flex
-  flex-col
-  px-10
+
+.intro {
+  @apply 
+  flex 
+  flex-col 
+  px-10 
   pt-7
-  md:pl-10
-  md:pr-0
+  md:pl-10 
+  md:pr-0;
 }
-.intro-p{
-  @apply
+
+.intro-p {
+  @apply 
   my-5
-  lg:text-xl
   md-lg:text-lg
+  lg:text-2xl
+  lg:pr-10
 }
 
-.intro-header{
-  @apply
-  flex
-  flex-col
-}
-.intro-header-text{
-  @apply
-  text-5xl
-  font-rubik
-  font-medium
-  overflow-hidden
-  md-lg:text-6xl
-  lg:text-7xl
+.intro-header {
+  @apply 
+  flex 
+  flex-col;
 }
 
-.sub-hero-wrapper{
-  @apply
-  flex
-  flex-col
-  overflow-visible
+.intro-header-text {
+  @apply 
+  text-5xl 
+  font-rubik 
+  font-medium 
+  overflow-hidden 
+  md-lg:text-6xl 
+  lg:text-7xl;
 }
 
-.hero-car{
-  @apply
-  relative
-  bg-[url(/nav-bg.png)]
-  bg-cover
-  bg-center
-  h-96
-  overflow-visible
-  sm:flex
-  sm:justify-center
-  sm:align-middle
-  sm:bg-contain
-  md:bg-cover
-  md:bg-center
+.sub-hero-wrapper {
+  @apply 
+  flex 
+  flex-col 
+  overflow-visible;
 }
 
-.hero-car-wrapper{
-  @apply
-  pb-10
-  overflow-visible
+.hero-car {
+  @apply 
+  relative 
+  bg-[url(/nav-bg.png)] 
+  bg-cover 
+  bg-center 
+  h-96 
+  overflow-visible 
+  sm:flex 
+  sm:justify-center 
+  sm:align-middle 
+  sm:bg-contain 
+  md:bg-cover md:bg-center;
 }
 
+.hero-car-wrapper {
+  @apply 
+  pb-10 
+  overflow-visible;
+}
 
 @keyframes slideInFromRight {
   from {
-    transform: translateX(100%); /* Start from the right, outside the viewport */
+    transform: translateX(100%);
     opacity: 0;
   }
   to {
@@ -114,199 +122,218 @@
     opacity: 1;
   }
 }
-.hero-car-image{
+
+.hero-car-image {
   @apply 
   absolute 
-  bottom-0 
-  max-w-none
-  w-[500px]
-  xs-400:w-[600px]
-  xs:w-[520px]
-  sm:w-4/5
-  mx-10
-  sm:mx-0
-  md:w-[650px]
-  md:ml-[200px]
-  md-lg:ml-[5px]
-  md-lg:w-[600px]
-  lg:w-[750px]
-  lg:ml-[150px]
-  lg-xl:ml-[0px]
+  bottom-0
+  max-w-none 
+  w-[500px] 
+  xs-400:w-[600px] 
+  xs:w-[520px] 
+  sm:w-4/5 mx-10 
+  sm:mx-0 
+  md:w-[650px] 
+  md:ml-[200px] 
+  md-lg:ml-[5px] 
+  md-lg:w-[600px] 
+  lg:w-[750px] 
+  lg:ml-[150px] 
+  lg-xl:ml-[0px];
 }
 
-.hero-button-1{
-  @apply
-  bg-gray-950  
-  text-white text-sm 
+.hero-button-1 {
+  @apply 
+  bg-gray-950
+  text-white 
+  text-sm 
   font-semibold 
-  hover:text-black hover:bg-white
-  py-1.5 px-4
-  border border-black 
-  rounded
+  hover:text-black 
+  hover:bg-white 
+  py-1.5 
+  px-4 
+  border 
+  border-black 
+  rounded;
 }
 
-.hero-car-choice{
-   @apply
-   flex
-   flex-row
-   justify-evenly
-   h-20
-   mt-10
+.hero-car-choice {
+  @apply 
+  flex 
+  flex-row 
+  justify-evenly 
+  h-20 
+  mt-12;
 }
 
-.logo-image-wrapper{
+.logo-image-wrapper {
   @apply 
   filter 
   grayscale 
   hover:filter-none 
-  focus:filter-none
-  flex
-  p-3
-  border-r-2
-  w-1/5
-  content-center
-  justify-center
-  align-middle
-  text-center
+  focus:filter-none 
+  flex p-3 border-r-2 
+  w-1/5 content-center 
+  justify-center 
+  align-middle 
+  text-center;
 }
 
-
-.nav_button{
+.nav_button {
   @apply 
   xs:hidden;
 }
 
-.links{
-  @apply
-  flex
+.links {
+  @apply 
+  flex 
   justify-center 
-  align-middle
+  align-middle 
   gap-5;
 }
 
-.menu{
-  @apply
+.menu {
+  @apply 
   fixed 
-  top-0
-  left-0
+  top-0 
+  left-0 
   w-screen 
-  h-screen
-  bg-light-dark
-  z-50
-  overflow-hidden
+  h-screen 
+  bg-light-dark 
+  z-50 
+  overflow-hidden;
 }
 
-.menu-options{
-  @apply
+.menu-options {
+  @apply 
   flex 
   flex-col 
-  justify-center
+  justify-center 
   content-center 
-  align-middle 
-  h-full 
-  w-full
-  text-6xl
-  px-10
-  xxs:text-7xl 
-  gap-10
-  xxs:mx-5 
-  xs:text-8xl xs:mx-20 xs:my-10 xs:gap-10
-  my-5
-}
-.menu-text-wrapper{
-  @apply
-  text-start
-  justify-center
-  text-white
-  px-5
-}
-.menu-text{
-  @apply
-  font-bebas
-  font-bold
-}
-.menu-button-wrapper{
-  @apply
-  fixed
-  nav-bar
-  text-white
-  content-center
   align-middle
-}
-.nav-bar-wrapper{
-  @apply w-full flex align-middle justify-center;
-}
-.nav-bar{
-  @apply
-  flex
-  w-screen
-  justify-between
-  px-8
-  py-5
-  max-w-[1300px]
+  h-full 
+  w-full 
+  text-6xl 
+  px-10 
+  xxs:text-7xl 
+  gap-10 
+  xxs:mx-5 
+  xs:text-8xl 
+  xs:mx-20 
+  xs:my-10 
+  xs:gap-10 my-5;
 }
 
-.section-wrapper{
-  @apply
-  flex
-  flex-col
-  h-lvh
-  lg:flex-row
-  lg:h-[1000px]
-  lg:my-16
+.menu-text-wrapper {
+  @apply 
+  text-start 
+  justify-center 
+  text-white px-5;
 }
-.app-graphic-wrapper{
-  @apply
-  overflow-visible
-  px-6
-  h-2/3
-  sm:px-10
-  sm:py-12
-  sm:mt-12
-  lg:w-[700px]
+
+.menu-text {
+  @apply 
+  font-bebas 
+  font-bold;
+}
+
+.menu-button-wrapper {
+  @apply 
+  fixed 
+  nav-bar 
+  text-white 
+  content-center 
+  align-middle;
+}
+
+.nav-bar-wrapper {
+  @apply 
+  w-full 
+  flex 
+  align-middle 
+  justify-center;
+}
+
+.nav-bar {
+  @apply 
+  flex 
+  w-screen 
+  justify-between 
+  px-8 
+  py-5 
+  max-w-[1300px];
+}
+
+.section-wrapper {
+  @apply 
+  flex 
+  flex-col 
+  h-lvh 
+  lg:flex-row 
+  lg:h-[1000px] 
+  lg:my-16;
+}
+
+.app-graphic-wrapper {
+  @apply 
+  overflow-visible 
+  px-6 
+  h-2/3 
+  sm:px-10 
+  sm:py-12 
+  sm:mt-12 
+  lg:w-[700px] 
   lg:h-[700px]
+  lg:mt-0
 }
-.app-graphic-text{
-  @apply
-  flex
-  flex-col
-  justify-center
-  gap-6
-  lg:w-[600px]
-  lg:h-[700px]
-  lg:align-middle
+
+.app-graphic-text {
+  @apply 
+  flex 
+  flex-col 
+  justify-center 
+  gap-6 
+  lg:w-[600px] 
+  lg:h-[700px] 
+  lg:align-middle;
 }
-.app-graphic{
-  @apply
-  h-full
-  relative
+
+.app-graphic {
+  @apply 
+  h-full 
+  relative;
 }
-.app-header-text{
-  @apply
-  text-center
-  font-rubik
-  font-medium
-  text-2xl
+
+.app-header-text {
+  @apply 
+  text-center 
+  font-rubik 
+  font-medium 
+  text-2xl 
   overflow-hidden
-}
-.app-p-text{
-  @apply
-  px-10
-  py-2
-  text-wrap
-  text-center
-  overflow-hidden
-}
-.app-buttons{
-  @apply
-  flex
-  flex-row
-  justify-center
-  gap-4
+  lg:text-5xl
 
 }
 
-.phone-section{
-  @apply
-  pb-10
+.app-p-text {
+  @apply 
+  px-10 
+  py-2 
+  text-wrap 
+  text-center 
+  overflow-hidden
+  lg:text-2xl
+}
+
+.app-buttons {
+  @apply 
+  flex 
+  flex-row 
+  justify-center 
+  gap-4;
+}
+
+.phone-section {
+  @apply 
+  pb-10;
 }
