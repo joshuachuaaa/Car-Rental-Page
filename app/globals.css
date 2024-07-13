@@ -17,12 +17,30 @@
   overflow-x: hidden;
 }
 
+.main{
+  @apply grid min-h-screen place-items-center;
+}
+
+.page-wrapper{
+  @apply
+  overflow-visible
+  max-w-[1200px]
+  md:w-full
+  md-lg:w-full
+}
+
 .home{
   @apply
   flex
   flex-col
   md:flex-row
   md:flex-1
+  md-lg:overflow-visible
+  md-lg:my-8
+  lg:my-12
+}
+.graphic{
+  @apply w-full md:w-full overflow-visible;
 }
 .intro{
   @apply
@@ -35,11 +53,7 @@
 }
 .intro-p{
   @apply
-  my-9
-}
-
-.graphic{
-  @apply w-full md:w-full overflow-visible;
+  my-5
 }
 
 .intro-header{
@@ -53,6 +67,7 @@
   font-rubik
   font-medium
   overflow-hidden
+  md-lg:text-6xl
 }
 
 .sub-hero-wrapper{
@@ -108,6 +123,9 @@
   sm:mx-0
   md:w-[650px]
   md:ml-[200px]
+  md-lg:ml-[5px]
+  md-lg:w-[600px]
+  lg:w-[750px]
 }
 
 .hero-button-1{
@@ -209,7 +227,9 @@
   content-center
   align-middle
 }
-
+.nav-bar-wrapper{
+  @apply w-full flex align-middle justify-center;
+}
 .nav-bar{
   @apply
   flex
@@ -217,6 +237,7 @@
   justify-between
   px-8
   py-5
+  max-w-[1200px]
 }
 
 .section-wrapper{
@@ -227,6 +248,7 @@
 }
 .app-graphic-wrapper{
   @apply
+  overflow-visible
   px-6
   h-2/3
   sm:px-10

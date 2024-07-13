@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <div>
+    <div className="page-wrapper">
       <div className="home">
         <div className="intro">
           <div className="intro-header">
