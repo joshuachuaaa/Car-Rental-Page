@@ -24,9 +24,11 @@
 .page-wrapper{
   @apply
   overflow-visible
-  max-w-[1200px]
+  max-w-[1300px]
   md:w-full
   md-lg:w-full
+  lg:mb-10
+  lg:mt-6
 }
 
 .home{
@@ -37,7 +39,7 @@
   md:flex-1
   md-lg:overflow-visible
   md-lg:my-8
-  lg:my-12
+  lg:my-16
 }
 .graphic{
   @apply w-full md:w-full overflow-visible;
@@ -54,6 +56,8 @@
 .intro-p{
   @apply
   my-5
+  lg:text-xl
+  md-lg:text-lg
 }
 
 .intro-header{
@@ -68,6 +72,7 @@
   font-medium
   overflow-hidden
   md-lg:text-6xl
+  lg:text-7xl
 }
 
 .sub-hero-wrapper{
@@ -126,6 +131,8 @@
   md-lg:ml-[5px]
   md-lg:w-[600px]
   lg:w-[750px]
+  lg:ml-[150px]
+  lg-xl:ml-[0px]
 }
 
 .hero-button-1{
@@ -237,7 +244,7 @@
   justify-between
   px-8
   py-5
-  max-w-[1200px]
+  max-w-[1300px]
 }
 
 .section-wrapper{
@@ -245,6 +252,9 @@
   flex
   flex-col
   h-lvh
+  lg:flex-row
+  lg:h-[1000px]
+  lg:my-16
 }
 .app-graphic-wrapper{
   @apply
@@ -254,11 +264,8 @@
   sm:px-10
   sm:py-12
   sm:mt-12
-}
-.app-graphic{
-  @apply
-  h-full
-  relative
+  lg:w-[700px]
+  lg:h-[700px]
 }
 .app-graphic-text{
   @apply
@@ -266,6 +273,14 @@
   flex-col
   justify-center
   gap-6
+  lg:w-[600px]
+  lg:h-[700px]
+  lg:align-middle
+}
+.app-graphic{
+  @apply
+  h-full
+  relative
 }
 .app-header-text{
   @apply
