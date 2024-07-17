@@ -64,7 +64,7 @@
   @apply 
   my-5
   md-lg:text-lg
-  lg:text-2xl
+  lg:text-xl
   lg:pr-10
 }
 
@@ -76,12 +76,12 @@
 
 .intro-header-text {
   @apply 
-  text-5xl 
+  text-4xl 
   font-rubik 
   font-medium 
   overflow-hidden 
-  md-lg:text-6xl 
-  lg:text-7xl;
+  md-lg:text-5xl 
+  lg:text-6xl;
 }
 
 .sub-hero-wrapper {
@@ -189,7 +189,7 @@
   flex 
   justify-center 
   align-middle 
-  gap-5;
+  gap-8;
 }
 
 .menu {
@@ -270,8 +270,14 @@
   flex-col 
   h-lvh 
   lg:flex-row 
-  lg:h-[1000px] 
-  lg:my-16;
+  lg:h-[800px] 
+  lg:mt-16;
+}
+
+.phone-section{
+  @apply
+  lg:w-full
+  lg:max-w-[1300px] 
 }
 
 .app-graphic-wrapper {
@@ -281,10 +287,12 @@
   h-2/3 
   sm:px-10 
   sm:py-12 
-  sm:mt-12 
-  lg:w-[700px] 
+  sm:mt-12
+  lg:w-1/2
   lg:h-[700px]
+  lg:px-12
   lg:mt-0
+  lg:py-0
 }
 
 .app-graphic-text {
@@ -293,13 +301,14 @@
   flex-col 
   justify-center 
   gap-6 
-  lg:w-[600px] 
+  lg:w-1/2
   lg:h-[700px] 
   lg:align-middle;
 }
 
 .app-graphic {
   @apply 
+  w-full
   h-full 
   relative;
 }
@@ -308,10 +317,10 @@
   @apply 
   text-center 
   font-rubik 
-  font-medium 
+  font-bold 
   text-2xl 
   overflow-hidden
-  lg:text-5xl
+  lg:text-4xl
 
 }
 
@@ -322,7 +331,8 @@
   text-wrap 
   text-center 
   overflow-hidden
-  lg:text-2xl
+  lg:text-xl
+  lg:px-8
 }
 
 .app-buttons {
@@ -331,9 +341,4 @@
   flex-row 
   justify-center 
   gap-4;
-}
-
-.phone-section {
-  @apply 
-  pb-10;
 }
