@@ -22,14 +22,14 @@ const Footer = () => {
           <h3 className="font-semibold">Subscribe to News</h3>
           <div className="flex">
             <input
-              type="email"
-              placeholder="Your e-mail"
-              className="bg-gray-100 px-4 py-2 rounded-l-full"
+                type="email"
+                placeholder="Your e-mail"
+                className="bg-gray-100 px-4 py-2 rounded-l-full"
             />
-            <button className="bg-gray-800 text-white px-4 py-2 rounded-r-full">
-              Subscribe
+            <button className="bg-gray-800 text-white px-4 py-2 rounded-r-full w-[160px]">
+                Subscribe
             </button>
-          </div>
+            </div>
         </div>
       </div>
       
