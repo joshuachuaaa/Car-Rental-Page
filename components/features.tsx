@@ -37,15 +37,18 @@ const KeyFeatures = () => {
   ];
 
   return (
-    <div className="max-w-[1300px] mx-auto px-4 py-8">
-      <h2 className="text-4xl font-bold mb-2 overflow-hidden">Key Features</h2>
-      <p className="text-gray-800 mb-8 text-xl">
+    <div className="max-w-[1300px] mx-4 px-4 py-8 mb-[50px] lg:mb-[150px]">
+      <p className="text-gray-600 text-lg mb-2">
+        Service that you can trust.
+      </p>
+      <h2 className="text-4xl font-bold mb-4 overflow-hidden">Key Features</h2>
+      <p className="text-gray-800 mb-12 text-xl">
         We are all about our client's comfort and safety. That's why we provide the best service you can imagine.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((feature, index) => (
           <div key={index} className="bg-white rounded-lg p-6 shadow-sm border-solid border">
-            <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-4 bg-opacity-10 bg-gray-${(index + 1) * 200}`}>
+            <div className={`w-12 h-16 lg:h-[100px] rounded-full flex items-center justify-center mb-4 bg-opacity-10 bg-gray-${(index + 1) * 200}`}>
               {feature.icon}
             </div>
             <h3 className="font-semibold text-lg">{feature.title}</h3>
