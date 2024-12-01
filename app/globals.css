@@ -16,7 +16,6 @@
   overflow-x: hidden;
 }
 
-<<<<<<< HEAD
 .home{
   @apply
   flex
@@ -35,7 +34,8 @@
   md:w-1/2
   md:px-0
   max-w-[530px]
-  md:pl-[100px]
+  md:pl-[50px]
+  md-lg:pl-[70px]
   
 }
 
@@ -51,6 +51,7 @@
 .intro-p{
   @apply
   my-9
+  text-xl
   lg:text-lg
 }
 .intro-header{
@@ -91,75 +92,7 @@
   @apply
   pb-10
   overflow-visible
-=======
-.main {
-  @apply 
-  grid 
-  min-h-screen 
-  place-items-center;
 }
-
-.page-wrapper {
-  @apply 
-  overflow-visible 
-  max-w-[1300px] 
-  md:w-full 
-  md-lg:w-full 
-  lg:mb-10 lg:mt-6;
-}
-
-.home {
-  @apply 
-  flex 
-  flex-col 
-  md:flex-row 
-  md:flex-1 
-  md-lg:overflow-visible 
-  md-lg:my-8 
-  lg:my-16;
-}
-
-.graphic {
-  @apply 
-  w-full 
-  md:w-full 
-  overflow-visible;
-}
-
-.intro {
-  @apply 
-  flex 
-  flex-col 
-  px-10 
-  pt-7
-  md:pl-10 
-  md:pr-0;
-}
-
-.intro-p {
-  @apply 
-  my-5
-  md-lg:text-lg
-  lg:text-xl
-  lg:pr-10
-}
-
-.intro-header {
-  @apply 
-  flex 
-  flex-col;
-}
-
-.intro-header-text {
-  @apply 
-  text-4xl 
-  font-rubik 
-  font-medium 
-  overflow-hidden 
-  md-lg:text-5xl 
-  lg:text-6xl;
-}
->>>>>>> 20120056d6c5a34a289bb477fdb3f0d570bce466
 
 .sub-hero-wrapper {
   @apply 
@@ -203,31 +136,12 @@
 .hero-car-image {
   @apply 
   absolute 
-<<<<<<< HEAD
   bottom-0 
   max-w-none
   w-[500px]
   xs-400:w-[600px]
   xs:w-[520px]
-  mx-10
   md:w-[600px]
-  md:mx-0
-=======
-  bottom-0
-  max-w-none 
-  w-[500px] 
-  xs-400:w-[600px] 
-  xs:w-[520px] 
-  sm:w-4/5 mx-10 
-  sm:mx-0 
-  md:w-[650px] 
-  md:ml-[200px] 
-  md-lg:ml-[5px] 
-  md-lg:w-[600px] 
-  lg:w-[750px] 
-  lg:ml-[150px] 
-  lg-xl:ml-[0px];
->>>>>>> 20120056d6c5a34a289bb477fdb3f0d570bce466
 }
 
 .hero-button-1 {
@@ -236,7 +150,6 @@
   text-white 
   text-sm 
   font-semibold 
-<<<<<<< HEAD
   hover:text-black hover:bg-white
   py-1.5 px-4
   border border-black 
@@ -244,15 +157,6 @@
   lg:text-lg
   lg:py-2
   lg:px-5
-=======
-  hover:text-black 
-  hover:bg-white 
-  py-1.5 
-  px-4 
-  border 
-  border-black 
-  rounded;
->>>>>>> 20120056d6c5a34a289bb477fdb3f0d570bce466
 }
 
 .hero-car-choice {
@@ -334,14 +238,12 @@
   font-bebas 
   font-bold;
 }
-<<<<<<< HEAD
 .app-graphic-wrapper{
   @apply
   p-6
   h-2/3
   overflow-visible
-=======
->>>>>>> 20120056d6c5a34a289bb477fdb3f0d570bce466
+}
 
 .menu-button-wrapper {
   @apply 
@@ -446,5 +348,5 @@
   flex 
   flex-row 
   justify-center 
-  gap-4;
+  gap-4
 }
