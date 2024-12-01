@@ -13,7 +13,7 @@ const landingCars = {
 
 const Hero = () => {
 
-  const [selectedBrand, setSelectedBrand] = useState<string>(landingCars.tesla);
+  const [selectedBrand, setSelectedBrand] = useState<string>(landingCars.ferrari);
   const [animationKey, setAnimationKey] = useState(0);  // Initialize animationKey state
 
 

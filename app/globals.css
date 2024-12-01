@@ -21,18 +21,37 @@
   @apply
   flex
   flex-col
-  xs:flex-row
+  md:flex-row
+  md:mt-10
+  
 }
+
 .intro{
   @apply
   flex
   flex-col
   px-10
   pt-7
+  md:w-1/2
+  md:px-0
+  max-w-[530px]
+  md:pl-[100px]
+  
+}
+
+.graphic{
+  @apply
+  flex
+  flex-col
+  pt-7
+  md:w-1/2
+  overflow-visible
+
 }
 .intro-p{
   @apply
   my-9
+  lg:text-lg
 }
 .intro-header{
   @apply
@@ -45,12 +64,16 @@
   font-rubik
   font-medium
   overflow-hidden
+  lg:text-6xl
 }
 
 .sub-hero-wrapper{
   @apply
   flex
   flex-col
+  md:w-full
+  overflow-visible
+
 }
 
 .hero-car{
@@ -60,11 +83,14 @@
   bg-cover
   bg-center
   h-96  
+  max-w-[553px]
+  m-auto
 }
 
 .hero-car-wrapper{
   @apply
   pb-10
+  overflow-visible
 
 }
 
@@ -88,6 +114,8 @@
   xs-400:w-[600px]
   xs:w-[520px]
   mx-10
+  md:w-[600px]
+  md:mx-0
 }
 
 .hero-button-1{
@@ -99,6 +127,9 @@
   py-1.5 px-4
   border border-black 
   rounded
+  lg:text-lg
+  lg:py-2
+  lg:px-5
 }
 
 .hero-car-choice{
@@ -213,6 +244,7 @@
   @apply
   p-6
   h-2/3
+  overflow-visible
 
 }
 .app-graphic{
