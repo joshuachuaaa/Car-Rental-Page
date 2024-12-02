@@ -37,7 +37,7 @@ const KeyFeatures = () => {
   ];
 
   return (
-    <div className="max-w-[1300px] mx-4 px-4 py-8 mb-[50px] lg:mb-[150px]">
+    <div className="max-w-[1300px] mx-4 px-4 py-8 mb-[50px] lg:mb-[150px] lg-xl:mx-auto lg-xl:mb-10">
       <p className="text-gray-600 text-lg mb-2">
         Service that you can trust.
       </p>

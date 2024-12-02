@@ -2,7 +2,7 @@ import React from 'react'
 
 const DriveNow = () => {
   return (
-    <div className='w-full px-8 max-w-[1300px] lg:mb-10'>
+    <div className='w-full px-8 max-w-[1300px] lg:mb-10 m-auto'>
         <div className="bg-gray-900 text-white p-8 rounded-lg shadow-lg w-full max-w-[1300px] mx-auto my-6 lg:h-[300px] lg:pt-14 mb-14">
         <h1 className="text-3xl font-bold mb-4 lg:mb-11">Drive with Next Ride Today</h1>
         <p className="mb-6 lg:mb-11">Get the app to explore the world of premium cars - that's exciting</p>
