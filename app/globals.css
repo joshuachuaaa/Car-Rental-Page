@@ -143,6 +143,10 @@
    justify-evenly
    h-20
    mt-10
+   max-w-[1000px]
+   mx-auto
+   mb-16
+
 }
 
 .logo-image-wrapper{
