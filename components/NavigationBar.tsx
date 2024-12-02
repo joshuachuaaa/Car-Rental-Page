@@ -18,7 +18,7 @@ const NavigationBar = () => {
         setOpen(!isOpen)
     }
     return (
-        <div className="nav-bar-wrapper">
+        <div>
             <div className="nav-bar">
                 <div>
                     <Image src="/car-icon-black.svg" alt="logo" height={30} width={30}></Image>
